@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\DTO\Security\SignInDTO;
+use App\DTO\Security\SignUpDTO;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,13 +15,13 @@ class SecurityController extends AbstractController
 {
     /**
      * @Route("/signin", name="signin")
-     * @param SignInDTO $SignInDTO
+     * @param SignUpDTO $SignUpDTO
      * @return JsonResponse
      */
-    public function signin(SignInDTO $SignInDTO)
+    public function signup(SignUpDTO $SignUpDTO)
     {
         return $this->json([
-            'message' => $SignInDTO->getEmail()
+            'message' => $SignUpDTO->getEmail()
         ]);
     }
 }
