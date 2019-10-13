@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/signin", name="signin")
+     * @Route("/signup", name="signup")
      * @param SignUpDTO $SignUpDTO
      * @return JsonResponse
      */
