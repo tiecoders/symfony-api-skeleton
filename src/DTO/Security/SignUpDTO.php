@@ -11,7 +11,6 @@
 
 namespace App\DTO\Security;
 
-use App\DTO\DTO;
 use App\DTO\ParamConvertible;
 
 /**
@@ -19,10 +18,10 @@ use App\DTO\ParamConvertible;
  *
  * (c) Ahmed HANNACHI <a.hannachi@tiecoders.com>
  *
- * Class SignInDTO
+ * Class SignUpDTO
  * @package App\DTO\Security
  */
-class SignInDTO extends ParamConvertible
+class SignUpDTO extends ParamConvertible
 {
     protected $email;
     protected $username;
