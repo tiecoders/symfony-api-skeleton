@@ -69,6 +69,23 @@
     "doctrine/migrations": {
         "version": "2.1.1"
     },
+    "doctrine/mongodb-odm": {
+        "version": "2.0.5"
+    },
+    "doctrine/mongodb-odm-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "1fd8598bf42227a1c8905edd32f640e4c5d15eff"
+        },
+        "files": [
+            "config/packages/doctrine_mongodb.yaml",
+            "config/packages/prod/doctrine_mongodb.yaml",
+            "src/Document/.gitignore"
+        ]
+    },
     "doctrine/orm": {
         "version": "v2.6.4"
     },
@@ -93,6 +110,15 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.3"
+    },
     "lcobucci/jwt": {
         "version": "3.3.1"
     },
@@ -108,6 +134,9 @@
             "./config/packages/lexik_jwt_authentication.yaml"
         ]
     },
+    "mongodb/mongodb": {
+        "version": "1.6.0"
+    },
     "monolog/monolog": {
         "version": "1.25.1"
     },
@@ -122,6 +151,9 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.2.3"
+    },
+    "php": {
+        "version": "7.4"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -192,6 +224,9 @@
     },
     "symfony/dotenv": {
         "version": "v4.3.5"
+    },
+    "symfony/error-handler": {
+        "version": "v4.4.7"
     },
     "symfony/event-dispatcher": {
         "version": "v4.3.5"
@@ -273,6 +308,9 @@
             "./config/packages/prod/monolog.yaml",
             "./config/packages/test/monolog.yaml"
         ]
+    },
+    "symfony/options-resolver": {
+        "version": "v4.4.7"
     },
     "symfony/orm-pack": {
         "version": "v1.0.6"
@@ -397,6 +435,9 @@
     },
     "twig/twig": {
         "version": "v2.12.0"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.0.1"
     },
     "zendframework/zend-code": {
         "version": "3.4.0"
